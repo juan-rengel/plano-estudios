@@ -5,63 +5,159 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+  /* ======= ESTILO GERAL ======= */
+body {
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+  background: #f6f7f9;
+  padding: 20px;
+  color: #333;
+}
+
+/* Espaçamento entre capítulos */
+.dia {
+  margin-bottom: 18px;
+}
+
+/* ======= BOTÃO DO ACCORDION ======= */
+.accordion {
+  width: 100%;
+  background: #ffffff;
+  color: #2a2a2a;
+  text-align: left;
+  padding: 16px 20px;
+  font-size: 18px;
+  border-radius: 10px;
+  border: 1px solid #dcdcdc;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.25s ease;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.06);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordion:hover {
+  background: #f0f0f0;
+}
+
+/* Ícone de + e - */
+.accordion::after {
+  content: "+";
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.accordion.active::after {
+  content: "-";
+}
+
+/* ======= CONTEÚDO INTERNO ======= */
+.panel {
+  background: white;
+  border-radius: 10px;
+  margin-top: 6px;
+  padding: 0 20px;
+  max-height: 0;
+  overflow: hidden;
+  border: 1px solid #e5e5e5;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.05);
+  transition: max-height 0.35s ease, padding 0.3s ease;
+}
+
+.panel.open {
+  padding: 20px;
+}
+
+/* ======= TIPOGRAFIA ======= */
+h2 {
+  font-size: 22px;
+  margin-bottom: 12px;
+  margin-top: 0;
+  color: #222;
+  font-weight: 700;
+}
+
+h3 {
+  margin-top: 18px;
+  font-size: 19px;
+  color: #343434;
+}
+
+h4 {
+  margin-top: 14px;
+  font-size: 17px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+ul, ol {
+  padding-left: 20px;
+  margin-bottom: 12px;
+}
+
+li {
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+/* ======= TABELAS ======= */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.05);
+  margin: 15px 0;
+}
+
+th {
+  background: #2f71e8;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+}
+
+td {
+  padding: 10px;
+  border-bottom: 1px solid #e5e5e5;
+  font-size: 15px;
+}
+
+tr:nth-child(even) {
+  background: #f8faff;
+}
+
+/* ======= MOBILE ======= */
+@media (max-width: 600px) {
   .accordion {
-    background-color: #f1f1f1;
-    color: #333;
-    cursor: pointer;
-    padding: 16px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 18px;
-    font-weight: bold;
-    transition: 0.3s;
-  }
-
-  .accordion:hover {
-    background-color: #e2e2e2;
-  }
-
-  .panel {
-    padding: 0 16px;
-    display: none;
-    background-color: white;
-    overflow: hidden;
-    border-left: 2px solid #e2e2e2;
-    border-right: 2px solid #e2e2e2;
-    border-bottom: 2px solid #e2e2e2;
+    font-size: 16px;
+    padding: 14px 16px;
   }
 
   h2 {
-    margin-top: 16px;
     font-size: 20px;
   }
 
   p, li {
-    line-height: 1.6;
-    font-size: 16px;
-  }
-
-  ul {
-    margin-left: 20px;
-  }
-
-  @media (max-width: 600px) {
-    .accordion { font-size: 16px; padding: 14px; }
-    h2 { font-size: 18px; }
-    p, li { font-size: 15px; }
+    font-size: 15px;
   }
   .capitulo{
+    font-size: 12px;
     background-color: #333;
-    color: white;
+    color: #ffffff;
     padding: 2px;
     text-align: center;
+    margin: 5px;
+  }
+ 
+}
 
-  }
-  .dia{
-    border: 1px solid #ccc;
-  }
 </style>
 </head>
 <body>
@@ -895,6 +991,879 @@
 
 
 
+<div class="capitulo"><h1>CAPÍTULO 3 — A Evolução da IA (2020–2025): Da Curiosidade ao Motor Corporativo Global </h1></div>
+
+<div class="dia">
+  <button class="accordion">3.1 — Introdução: 5 anos que mudaram 50</button>
+  <div class="panel">
+
+    <h2>3.1. Introdução: 5 anos que mudaram 50</h2>
+
+    <p>Entre 2020 e 2025, a evolução da IA não foi apenas técnica — foi estrutural.</p>
+
+    <p>Enquanto a internet levou 10 anos para consolidar seu impacto, a IA precisou de apenas 36 meses para:</p>
+
+    <ul>
+      <li>revolucionar modelos de negócios</li>
+      <li>transformar processos internos</li>
+      <li>alterar carreiras</li>
+      <li>mudar expectativas de clientes</li>
+      <li>provocar fusões, demissões e criação de novos cargos</li>
+    </ul>
+
+    <p>Cinco anos equivalentes a meio século de inovação.</p>
+    <p>O que antes era pesquisa, hoje é infraestrutura.</p>
+
+  </div>
+</div>
+
+<div class="dia">
+  <button class="accordion">3.2 — Linha do Tempo da Revolução</button>
+  <div class="panel">
+
+    <h2>3.2. Linha do Tempo da Revolução</h2>
+
+    <h3>2020 — Pré-IA moderna</h3>
+    <p>A maioria das empresas ainda operava com:</p>
+    <ul>
+      <li>chatbots estáticos</li>
+      <li>automações rígidas</li>
+      <li>sistemas legados</li>
+      <li>APIs complexas</li>
+      <li>baixo nível de integração</li>
+    </ul>
+    <p>IA era assunto restrito a universidades e grandes corporações.</p>
+
+    <h3>2021 — Chegada do GPT-3 ao mainstream</h3>
+    <p>O primeiro grande boom.</p>
+    <p>Pela primeira vez, um modelo:</p>
+    <ul>
+      <li>escrevia textos coerentes</li>
+      <li>gerava explicações</li>
+      <li>produzia código básico</li>
+      <li>conseguia conversar com contexto</li>
+    </ul>
+
+    <h3>2022 — Avanço da qualidade e ampliação do acesso</h3>
+    <p>Empresas começaram a testar IA em:</p>
+    <ul>
+      <li>atendimento</li>
+      <li>marketing</li>
+      <li>educação</li>
+      <li>saúde</li>
+      <li>gestão</li>
+    </ul>
+    <p>Foi quando o conceito de “prompt” começou a surgir.</p>
+
+    <h3>2023 — GPT-4 transforma o mundo corporativo</h3>
+    <p>Este foi o ponto de virada.</p>
+    <ul>
+      <li>modelos mais robustos</li>
+      <li>capacidades multimodais</li>
+      <li>integração com APIs</li>
+      <li>raciocínio avançado</li>
+      <li>ChatGPT se torna ferramenta global</li>
+    </ul>
+
+    <p>Pela primeira vez, empresas perceberam:<br>
+    <strong>“Se não adotarmos IA, ficaremos para trás.”</strong></p>
+
+    <h3>2024 — Explosão da automação inteligente</h3>
+    <p>Com a popularização de:</p>
+    <ul>
+      <li>n8n</li>
+      <li>Zapier</li>
+      <li>Make</li>
+      <li>Notion AI</li>
+      <li>Copilot</li>
+      <li>Gemini</li>
+      <li>Claude</li>
+    </ul>
+
+    <p>A IA deixou de ser “chatbot” e se tornou:</p>
+    <ul>
+      <li>pipeline</li>
+      <li>automação</li>
+      <li>processos inteligentes</li>
+      <li>análise operacional</li>
+    </ul>
+
+    <p>Negócios pequenos começaram a automatizar:</p>
+    <ul>
+      <li>agendamentos</li>
+      <li>atendimento</li>
+      <li>vendas</li>
+      <li>relatórios</li>
+      <li>triagem</li>
+      <li>organização de clientes</li>
+    </ul>
+
+    <p>A revolução deixou de ser vertical (grandes empresas) e se tornou horizontal (qualquer empresa).</p>
+
+    <h3>2025 — A IA entra oficialmente no core dos negócios</h3>
+    <p>Em 2025, LLMs se tornaram:</p>
+    <ul>
+      <li>consultores</li>
+      <li>analistas</li>
+      <li>atendentes</li>
+      <li>auxiliares administrativos</li>
+      <li>sistemas de recomendação</li>
+      <li>motores de decisão</li>
+    </ul>
+
+    <p>Hoje, a IA é uma plataforma operacional.<br>
+    Assim como eletricidade e internet, faz parte do dia a dia corporativo.</p>
+
+  </div>
+</div>
+
+<div class="dia">
+  <button class="accordion">3.3 — O que mudou tecnicamente entre 2020 e 2025</button>
+  <div class="panel">
+
+    <h2>3.3. O que mudou tecnicamente entre 2020 e 2025</h2>
+
+    <h3>1. Modelos ficaram 100x maiores</h3>
+    <p>Os saltos de potência permitiram:</p>
+    <ul>
+      <li>janelas de contexto gigantes</li>
+      <li>raciocínio estável</li>
+      <li>respostas coerentes</li>
+      <li>consistência em tarefas longas</li>
+      <li>entendimento complexo</li>
+      <li>interpretação de documentos grandes</li>
+    </ul>
+
+    <h3>2. Multimodalidade se tornou padrão</h3>
+    <p>Modelos passaram a entender:</p>
+    <ul>
+      <li>texto</li>
+      <li>imagem</li>
+      <li>áudio</li>
+      <li>vídeo</li>
+      <li>documentos</li>
+      <li>dados tabulares</li>
+    </ul>
+
+    <p>E combinar tudo isso.</p>
+
+    <p>Isso viabilizou:</p>
+    <ul>
+      <li>análise de contratos</li>
+      <li>leitura de planilhas</li>
+      <li>interpretação de fotos</li>
+      <li>explicação de telas</li>
+      <li>criação de vídeos</li>
+    </ul>
+
+    <h3>3. Ferramentas nativas (tool use)</h3>
+    <p>Modelos ganharam capacidade de:</p>
+    <ul>
+      <li>usar APIs</li>
+      <li>acessar bancos de dados</li>
+      <li>responder usando funções</li>
+      <li>executar cálculos complexos</li>
+      <li>consultar sistemas externos</li>
+    </ul>
+
+    <p>A IA deixou de ser apenas “texto”, virou um agente operacional.</p>
+
+    <h3>4. A IA ficou mais segura</h3>
+    <p>Com:</p>
+    <ul>
+      <li>RLHF</li>
+      <li>treinamento ético</li>
+      <li>filtros de conteúdo</li>
+      <li>alinhamento de objetivos</li>
+    </ul>
+
+    <p>Hoje ela pode ser usada corporativamente com menos riscos.</p>
+
+    <h3>5. Custos caíram drasticamente</h3>
+    <p>Antes:<br>→ US$ 0,05 por mil tokens</p>
+    <p>Hoje:<br>→ US$ 0,002 por mil tokens</p>
+
+    <p>Isso permitiu automação em larga escala.</p>
+
+  </div>
+</div>
+
+
+<div class="dia">
+  <button class="accordion">3.4 — O impacto dessa evolução nas empresas</button>
+  <div class="panel">
+
+    <h2>3.4. O impacto dessa evolução nas empresas</h2>
+
+    <h3>1. Redução de custos operacionais</h3>
+    <p>Empresas que implementaram IA relataram:</p>
+    <ul>
+      <li>40% menos tempo em tarefas repetitivas</li>
+      <li>60–80% de redução em atendimento humano</li>
+      <li>30% mais eficiência administrativa</li>
+    </ul>
+
+    <h3>2. Aumento de produtividade</h3>
+    <p>A IA executa em 10 segundos o que um humano leva 20 minutos.</p>
+    <ul>
+      <li>relatórios</li>
+      <li>resumos</li>
+      <li>pesquisas</li>
+      <li>triagem</li>
+      <li>organização</li>
+      <li>análise</li>
+      <li>respostas</li>
+    </ul>
+
+    <h3>3. Novos produtos e serviços</h3>
+    <ul>
+      <li>chatbots customizados</li>
+      <li>relatórios automáticos</li>
+      <li>agentes de suporte</li>
+      <li>ferramentas IA-first</li>
+      <li>assistentes corporativos privados</li>
+    </ul>
+
+    <h3>4. Democratização da tecnologia</h3>
+    <p>Hoje qualquer pessoa com smartphone pode:</p>
+    <ul>
+      <li>criar automações</li>
+      <li>montar sistemas</li>
+      <li>gerar relatórios</li>
+      <li>criar assistentes pessoais</li>
+      <li>programar sem código</li>
+      <li>vender serviços de IA</li>
+    </ul>
+
+    <p><strong>Esse é o verdadeiro impacto.</strong></p>
+
+  </div>
+</div>
+
+<div class="dia">
+  <button class="accordion">3.5 — As 4 fases de adoção empresarial</button>
+  <div class="panel">
+
+    <h2>3.5. As 4 fases de adoção empresarial</h2>
+
+    <h3>Fase 1 — Experimentação</h3>
+    <p>Empresas testam ChatGPT e automações simples.</p>
+
+    <h3>Fase 2 — Adoção operacional</h3>
+    <p>Começam a automatizar setores:</p>
+    <ul>
+      <li>atendimento</li>
+      <li>vendas</li>
+      <li>estoque</li>
+      <li>relatórios</li>
+    </ul>
+
+    <h3>Fase 3 — Integração estratégica</h3>
+    <p>IA passa a ser:</p>
+    <ul>
+      <li>suporte ao gestor</li>
+      <li>motor de análise</li>
+      <li>inteligência comercial</li>
+      <li>recomendação estratégica</li>
+    </ul>
+
+    <h3>Fase 4 — Infraestrutura</h3>
+    <p>A IA se torna parte fundamental da empresa.</p>
+    <p>Assim como:</p>
+    <ul>
+      <li>banco de dados</li>
+      <li>ERP</li>
+      <li>internet</li>
+      <li>CRM</li>
+    </ul>
+
+  </div>
+</div>
+
+
+<div class="dia">
+  <button class="accordion">3.6 — O novo profissional de IA (IA Worker)</button>
+  <div class="panel">
+
+    <h2>3.6. O novo profissional de IA (IA Worker)</h2>
+
+    <p>Entre 2024 e 2025, surgiu um novo perfil profissional global:</p>
+    <p><strong>O profissional de IA.</strong></p>
+
+    <p>Ele não precisa ser programador.</p>
+
+    <p>Ele precisa:</p>
+    <ul>
+      <li>saber construir prompts</li>
+      <li>integrar ferramentas</li>
+      <li>usar APIs</li>
+      <li>criar automações</li>
+      <li>estruturar fluxos</li>
+      <li>analisar dados com IA</li>
+      <li>transformar IA em resultado prático</li>
+    </ul>
+
+    <p>Esse é o profissional mais procurado do mercado.</p>
+
+  </div>
+</div>
+
+<div class="dia">
+  <button class="accordion">3.7 — Oportunidades criadas pela evolução da IA</button>
+  <div class="panel">
+
+    <h2>3.7. Oportunidades criadas pela evolução da IA</h2>
+
+    <p>Empresas precisam de profissionais que:</p>
+    <ul>
+      <li>criem automações</li>
+      <li>gerenciem chatbots</li>
+      <li>construam agentes</li>
+      <li>integrem IA com sistemas</li>
+      <li>montem relatórios corporativos</li>
+      <li>façam inteligência operacional</li>
+    </ul>
+
+    <p>As oportunidades incluem:</p>
+    <ul>
+      <li>consultorias</li>
+      <li>atendimento</li>
+      <li>treinamento</li>
+      <li>criação de produtos</li>
+      <li>implementação de IA interna</li>
+      <li>otimização de processos</li>
+    </ul>
+
+  </div>
+</div>
+
+
+<div class="dia">
+  <button class="accordion">3.8 — O futuro (2025–2030)</button>
+  <div class="panel">
+
+    <h2>3.8. O futuro (2025–2030)</h2>
+
+    <p>Nos próximos anos veremos:</p>
+    <ul>
+      <li>agentes autônomos corporativos</li>
+      <li>IAs privadas por empresa</li>
+      <li>integrações nativas com ERPs</li>
+      <li>relatórios automáticos inteligentes</li>
+      <li>sistemas completos sem programar</li>
+      <li>cooperação humano–IA constante</li>
+      <li>decisões empresariais assistidas por IA</li>
+    </ul>
+
+  </div>
+</div>
+
+
+<div class="dia">
+  <button class="accordion">3.9 — Conclusão do Capítulo 3</button>
+  <div class="panel">
+
+    <h2>3.9. Conclusão do Capítulo 3</h2>
+
+    <p>Este capítulo mostrou:</p>
+    <ul>
+      <li>a evolução histórica</li>
+      <li>o salto técnico</li>
+      <li>o impacto corporativo</li>
+      <li>a redução de custos</li>
+      <li>a mudança estrutural do mercado</li>
+      <li>a oportunidade profissional emergente</li>
+    </ul>
+
+    <p>Agora você entende por que 2025 é o melhor momento da história para dominar IA.</p>
+
+  </div>
+</div>
+
+<div class="dia">
+  <button class="accordion">4.1 — Introdução: A Competição das Big IAs</button>
+  <div class="panel">
+
+    <h2>CAPÍTULO 4 — Os Grandes Modelos Modernos: GPT-5.1, Gemini 3 e Claude 4.5</h2>
+    <p><strong>E-book: IA Master 90 Dias — Versão Profissional</strong></p>
+
+    <h3>4.1. Introdução: A Competição das Big IAs</h3>
+
+    <p>Entre 2023 e 2025, três empresas assumiram o comando global do setor de IAs de linguagem:</p>
+
+    <ul>
+      <li>OpenAI → GPT-4, GPT-5, GPT-5.1</li>
+      <li>Google → Gemini 1, 1.5, Gemini 3 Ultra</li>
+      <li>Anthropic → Claude 2, 3, 4, 4.1, 4.5</li>
+    </ul>
+
+    <p>Cada uma adotou uma filosofia diferente:</p>
+    <ul>
+      <li>OpenAI: foco em utilidade prática + integração com ferramentas</li>
+      <li>Google: foco em contexto, documentos e busca avançada</li>
+      <li>Anthropic: foco em segurança, coerência e profundidade analítica</li>
+    </ul>
+
+    <p>Hoje nenhuma empresa moderna trabalha com apenas um modelo.<br>
+    Todas usam 2 ou mais para suprir necessidades diferentes.</p>
+
+    <p>Este capítulo explica:</p>
+    <ul>
+      <li>como cada modelo realmente funciona</li>
+      <li>pontos fortes</li>
+      <li>limitações</li>
+      <li>ambiente ideal de uso</li>
+      <li>exemplos corporativos reais</li>
+      <li>como escolher o melhor modelo para cada tarefa</li>
+    </ul>
+
+  </div>
+</div>
+
+<div class="dia">
+  <button class="accordion">4.2 — GPT-5.1: O modelo mais versátil do mundo corporativo</button>
+  <div class="panel">
+
+    <h2>4.2. GPT-5.1 — O modelo mais versátil do mundo corporativo</h2>
+
+    <h3>Visão geral</h3>
+
+    <p>O GPT-5.1 é a evolução natural do GPT-4, com foco em:</p>
+
+    <ul>
+      <li>raciocínio profundo</li>
+      <li>estabilidade de respostas</li>
+      <li>velocidade</li>
+      <li>precisão de instruções</li>
+      <li>execução de tarefas complexas</li>
+    </ul>
+
+    <p><strong>Sua grande força:</strong><br>
+    É o modelo mais equilibrado e versátil hoje.</p>
+
+    <p>Funciona muito bem para:</p>
+    <ul>
+      <li>análise técnica</li>
+      <li>explicações complexas</li>
+      <li>programação</li>
+      <li>automação</li>
+      <li>atendimento corporativo</li>
+      <li>criação de conteúdo</li>
+      <li>integração com ferramentas externas</li>
+    </ul>
+
+  </div>
+</div>
+
+
+<div class="dia">
+  <button class="accordion">4.2.1 — Pontos fortes do GPT-5.1</button>
+  <div class="panel">
+
+    <h2>4.2.1. Pontos fortes do GPT-5.1</h2>
+
+    <h3>1. Raciocínio estruturado</h3>
+    <p>GPT-5.1 segue instruções como uma máquina cirúrgica:</p>
+    <ul>
+      <li>entende regras</li>
+      <li>respeita formatos</li>
+      <li>segue estruturas</li>
+      <li>aplica lógicas de negócio</li>
+    </ul>
+
+    <p>Ideal para:</p>
+    <ul>
+      <li>relatórios</li>
+      <li>estratégias</li>
+      <li>fluxos corporativos</li>
+      <li>automações avançadas</li>
+    </ul>
+
+    <h3>2. Precisão em linguagens</h3>
+    <p>GPT-5.1 é excepcional em:</p>
+    <ul>
+      <li>português</li>
+      <li>inglês</li>
+      <li>espanhol</li>
+      <li>linguagem jurídica</li>
+      <li>linguagem formal</li>
+      <li>tom corporativo</li>
+      <li>documentação</li>
+    </ul>
+
+    <p>Se você precisa de um texto impecável, ele entrega.</p>
+
+    <h3>3. Ferramentas e integrações</h3>
+    <p>GPT-5.1 faz uso nativo de ferramentas, como:</p>
+    <ul>
+      <li>funções</li>
+      <li>APIs</li>
+      <li>sistemas externos</li>
+      <li>bancos de dados simulados</li>
+      <li>automação de cálculos</li>
+      <li>execução de raciocínio matemático</li>
+    </ul>
+
+    <h3>4. Programação e engenharia</h3>
+    <p>Sua capacidade de:</p>
+    <ul>
+      <li>escrever código</li>
+      <li>revisar código</li>
+      <li>criar sistemas</li>
+      <li>sugerir arquiteturas</li>
+      <li>otimizar performance</li>
+    </ul>
+
+    <p>É a mais forte do mercado.</p>
+
+  </div>
+</div>
+
+<div class="dia">
+  <button class="accordion">4.2.2 — Pontos fracos do GPT-5.1</button>
+  <div class="panel">
+
+    <h2>4.2.2. Pontos fracos do GPT-5.1</h2>
+
+    <ul>
+      <li>Pode “aparar” respostas — às vezes resume demais conteúdos muito longos.</li>
+      <li>Conteúdos muito criativos — não é tão artístico quanto Gemini 3.</li>
+    </ul>
+
+  </div>
+</div>
+
+
+<div class="dia">
+  <button class="accordion">4.2.3 — Melhor uso corporativo do GPT-5.1</button>
+  <div class="panel">
+
+    <h2>4.2.3. Melhor uso corporativo do GPT-5.1</h2>
+
+    <ul>
+      <li>documentação</li>
+      <li>relatórios gerenciais</li>
+      <li>consultoria</li>
+      <li>criação de processos</li>
+      <li>engenharia de software</li>
+      <li>automações via API</li>
+      <li>vendas corporativas</li>
+      <li>dados e planilhas</li>
+      <li>revisões técnicas</li>
+      <li>sistemas complexos</li>
+    </ul>
+
+  </div>
+</div>
+
+
+<div class="dia">
+  <button class="accordion">4.3.1 — Pontos fortes do Gemini 3</button>
+  <div class="panel">
+
+    <h2>4.3.1. Pontos fortes do Gemini 3</h2>
+
+    <h3>1. Interpretação de documentos</h3>
+    <p>O Gemini 3 é superior para:</p>
+    <ul>
+      <li>relatórios PDF</li>
+      <li>anexos corporativos</li>
+      <li>planilhas grandes</li>
+      <li>apresentações</li>
+      <li>imagens com texto</li>
+      <li>contratos</li>
+    </ul>
+
+    <p>Ele extrai, interpreta e organiza com precisão impressionante.</p>
+
+    <h3>2. Multimodalidade nativa</h3>
+    <p>Gemini processa:</p>
+    <ul>
+      <li>texto</li>
+      <li>áudio</li>
+      <li>vídeo</li>
+      <li>imagem</li>
+      <li>código</li>
+      <li>arquivos grandes</li>
+    </ul>
+
+    <p>De maneira integrada.</p>
+
+    <h4>Exemplo:</h4>
+    <p>Você envia um vídeo do estoque real da empresa e ele gera:</p>
+    <ul>
+      <li>relatório</li>
+      <li>inconsistências</li>
+      <li>sugestões de melhoria</li>
+    </ul>
+
+    <h3>3. Forte em navegação de contexto amplo</h3>
+    <p>Ótimo para:</p>
+    <ul>
+      <li>pesquisa</li>
+      <li>análise de cenários</li>
+      <li>síntese de grandes bases</li>
+    </ul>
+
+  </div>
+</div>
+
+<div class="dia">
+  <button class="accordion">4.3.2 — Pontos fracos do Gemini 3</button>
+  <div class="panel">
+
+    <h2>4.3.2. Pontos fracos do Gemini 3</h2>
+
+    <ul>
+      <li>Menor precisão técnica que GPT em algumas tarefas — especialmente programação avançada.</li>
+      <li>Pode ser prolixo — às vezes escreve textos longos demais.</li>
+    </ul>
+
+  </div>
+</div>
+
+<div class="dia">
+  <button class="accordion">4.3.3 — Melhor uso corporativo do Gemini 3</button>
+  <div class="panel">
+
+    <h2>4.3.3. Melhor uso corporativo do Gemini 3</h2>
+
+    <ul>
+      <li>auditoria</li>
+      <li>leitura de documentos</li>
+      <li>triagem de currículos</li>
+      <li>análise multimodal</li>
+      <li>interpretação de planilhas</li>
+      <li>visualização de relatórios complexos</li>
+      <li>suporte a processos operacionais</li>
+      <li>análise de dados visuais</li>
+    </ul>
+
+  </div>
+</div>
+
+<div class="dia">
+  <button class="accordion">4.4 — Claude 4.5: O melhor modelo para clareza, ética e profundidade</button>
+  <div class="panel">
+
+    <h2>4.4. Claude 4.5 — O melhor modelo para clareza, ética e profundidade</h2>
+
+    <h3>Visão geral</h3>
+
+    <p>Claude sempre se destacou por ser:</p>
+    <ul>
+      <li>extremamente coerente</li>
+      <li>detalhado</li>
+      <li>estruturado</li>
+      <li>seguro</li>
+      <li>excelente para longos textos</li>
+    </ul>
+
+    <p><strong>O Claude 4.5 elevou isso a outro nível.</strong></p>
+
+    <p><strong>Sua grande força:</strong><br>Clareza analítica e profundidade em explicações longas.</p>
+
+  </div>
+</div>
+
+<div class="dia">
+  <button class="accordion">4.4.1 — Pontos fortes do Claude 4.5</button>
+  <div class="panel">
+
+    <h2>4.4.1. Pontos fortes do Claude 4.5</h2>
+
+    <h3>1. O melhor modelo do mundo para escrita longa</h3>
+    <p>Nenhum modelo supera Claude em:</p>
+    <ul>
+      <li>artigos</li>
+      <li>capítulos de livros</li>
+      <li>análises profundas</li>
+      <li>explicações corporativas</li>
+      <li>documentos extensos</li>
+    </ul>
+
+    <h3>2. Consistência</h3>
+    <p>Se você pede 20 páginas sobre um tema, ele entrega as 20 com coerência.</p>
+
+    <h3>3. Segurança e ética</h3>
+    <p>Claude é o mais seguro:</p>
+    <ul>
+      <li>menos alucinações</li>
+      <li>mais confiável</li>
+      <li>mais controlado</li>
+      <li>respostas mais equilibradas</li>
+    </ul>
+
+    <p>Ideal para áreas sensíveis.</p>
+
+  </div>
+</div>
+
+<div class="dia">
+  <button class="accordion">4.5.2 — Pontos fracos do Claude 4.5</button>
+  <div class="panel">
+
+    <h2>4.5.2. Pontos fracos do Claude 4.5</h2>
+
+    <ul>
+      <li>Não é o melhor em programação — GPT-5.1 supera em código.</li>
+      <li>Pode ser formal demais — precisa ajustar o tom.</li>
+    </ul>
+
+  </div>
+</div>
+
+<div class="dia">
+  <button class="accordion">4.5.3 — Melhor uso corporativo do Claude 4.5</button>
+  <div class="panel">
+
+    <h2>4.5.3. Melhor uso corporativo do Claude 4.5</h2>
+
+    <ul>
+      <li>livros</li>
+      <li>artigos longos</li>
+      <li>consultoria</li>
+      <li>análises profundas</li>
+      <li>relatórios estratégicos</li>
+      <li>textos altamente técnicos</li>
+      <li>documentos oficiais</li>
+      <li>políticas corporativas</li>
+    </ul>
+
+  </div>
+</div>
+
+<div class="dia">
+  <button class="accordion">4.6 — Tabela Comparativa (Visão Corporativa)</button>
+  <div class="panel">
+
+    <h2>4.6. Tabela Comparativa (Visão Corporativa)</h2>
+
+    <table border="1" cellpadding="8" style="border-collapse: collapse; width: 100%;">
+      <tr>
+        <th>Tarefa</th>
+        <th>GPT-5.1</th>
+        <th>Gemini 3</th>
+        <th>Claude 4.5</th>
+      </tr>
+      <tr>
+        <td>Programação</td>
+        <td>★★★★★</td>
+        <td>★★★☆☆</td>
+        <td>★★☆☆☆</td>
+      </tr>
+      <tr>
+        <td>Relatórios técnicos</td>
+        <td>★★★★★</td>
+        <td>★★★★☆</td>
+        <td>★★★★★</td>
+      </tr>
+      <tr>
+        <td>Documentos longos</td>
+        <td>★★★★☆</td>
+        <td>★★★★☆</td>
+        <td>★★★★★</td>
+      </tr>
+      <tr>
+        <td>Imagens/Vídeos</td>
+        <td>★★★☆☆</td>
+        <td>★★★★★</td>
+        <td>★★★☆☆</td>
+      </tr>
+      <tr>
+        <td>Análise de PDFs</td>
+        <td>★★★★☆</td>
+        <td>★★★★★</td>
+        <td>★★★★☆</td>
+      </tr>
+      <tr>
+        <td>Criação de conteúdo</td>
+        <td>★★★★★</td>
+        <td>★★★☆☆</td>
+        <td>★★★★★</td>
+      </tr>
+      <tr>
+        <td>Precisão</td>
+        <td>★★★★★</td>
+        <td>★★★★☆</td>
+        <td>★★★★★</td>
+      </tr>
+      <tr>
+        <td>Segurança</td>
+        <td>★★★★☆</td>
+        <td>★★★★☆</td>
+        <td>★★★★★</td>
+      </tr>
+      <tr>
+        <td>Atendimento</td>
+        <td>★★★★★</td>
+        <td>★★★★☆</td>
+        <td>★★★★☆</td>
+      </tr>
+    </table>
+
+  </div>
+</div>
+
+
+<div class="dia">
+  <button class="accordion">4.7 — Qual modelo usar? (Guia Estratégico)</button>
+  <div class="panel">
+
+    <h2>4.7. Qual modelo usar? (Guia Estratégico)</h2>
+
+    <ul>
+      <li>Se você quer precisão, instrução e processo → <strong>GPT-5.1</strong></li>
+      <li>Se você quer ler, interpretar e sintetizar PDFs → <strong>Gemini 3</strong></li>
+      <li>Se você quer escrever profundamente → <strong>Claude 4.5</strong></li>
+    </ul>
+
+  </div>
+</div>
+
+<div class="dia">
+  <button class="accordion">4.8 — O futuro da rivalidade</button>
+  <div class="panel">
+
+    <h2>4.8. O futuro da rivalidade</h2>
+
+    <p>As três empresas caminham em direções complementares:</p>
+    <ul>
+      <li>OpenAI → Ferramentas</li>
+      <li>Google → Multimodalidade</li>
+      <li>Anthropic → Consistência</li>
+    </ul>
+
+    <p>A tendência é que:</p>
+    <ul>
+      <li>modelos fiquem mais baratos</li>
+      <li>janelas de contexto aumentem</li>
+      <li>agentes corporativos surjam</li>
+      <li>IA privada por empresa vire tendência</li>
+    </ul>
+
+  </div>
+</div>
+
+<div class="dia">
+  <button class="accordion">4.9 — Conclusão do Capítulo 4</button>
+  <div class="panel">
+
+    <h2>4.9. Conclusão do Capítulo 4</h2>
+
+    <p>Você agora domina:</p>
+
+    <ul>
+      <li>forças e fraquezas dos modelos modernos</li>
+      <li>como usá-los no ambiente empresarial</li>
+      <li>como selecionar o modelo ideal para cada operação</li>
+      <li>como construir soluções aproveitando o melhor de cada um</li>
+    </ul>
+
+    <p>No próximo capítulo você vai aprender a habilidade mais importante do livro inteiro.</p>
+
+  </div>
+</div>
 
 
 
@@ -925,5 +1894,26 @@
     });
   }
 </script>
+
+<script>
+  const items = document.querySelectorAll(".accordion");
+
+  items.forEach(acc => {
+    acc.addEventListener("click", () => {
+      acc.classList.toggle("active");
+
+      const panel = acc.nextElementSibling;
+
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+        panel.classList.remove("open");
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+        panel.classList.add("open");
+      }
+    });
+  });
+</script>
+
 </body>
 </html>
